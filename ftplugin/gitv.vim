@@ -41,4 +41,5 @@ endfunc
 
 nnoremap <buffer> <silent> ]r :call gitv#call("JumpToRef(0)")<cr>
 nnoremap <buffer> <silent> [r :call gitv#call("JumpToRef(1)")<cr>
-nnoremap <buffer> <silent> rev :call <SID>GitvRevert()<CR>
+nnoremap <buffer> <silent> rev :call <SID>GitvRevert()<cr>
+nnoremap <buffer> <silent> y<C-G> :call setreg(v:register, gitv#get_sha())<cr>
